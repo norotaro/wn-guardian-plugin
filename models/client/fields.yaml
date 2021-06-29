@@ -1,0 +1,25 @@
+fields:
+    name:
+        label: 'norotaro.guardian::lang.models.name'
+        span: auto
+        type: text
+    active:
+        label: 'norotaro.guardian::lang.models.active'
+        span: auto
+        type: switch
+tabs:
+    fields:
+        auth_codes:
+            span: full
+            path: relation_codes
+            context:
+                - update
+                - preview
+            type: partial
+            tab: 'norotaro.guardian::lang.client.tab_codes'
+        description:
+            label: 'norotaro.guardian::lang.models.description'
+            size: large
+            span: full
+            type: textarea
+            tab: 'norotaro.guardian::lang.client.tab_description'

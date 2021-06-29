@@ -1,0 +1,10 @@
+name: Clients
+form: $/norotaro/guardian/models/client/fields.yaml
+modelClass: Norotaro\Guardian\Models\Client
+defaultRedirect: norotaro/guardian/clients
+create:
+    redirect: 'norotaro/guardian/clients/update/:id'
+    redirectClose: norotaro/guardian/clients
+update:
+    redirect: norotaro/guardian/clients
+    redirectClose: norotaro/guardian/clients

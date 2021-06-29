@@ -1,0 +1,24 @@
+plugin:
+    name: 'norotaro.guardian::lang.plugin.name'
+    description: 'norotaro.guardian::lang.plugin.description'
+    author: Norotaro
+    icon: oc-icon-shield
+    homepage: ''
+permissions:
+    norotaro.guardian.manage_clients:
+        tab: 'norotaro.guardian::lang.plugin.name'
+        label: 'norotaro.guardian::lang.permissions.manage_clients'
+navigation:
+    main-menu:
+        label: 'norotaro.guardian::lang.menu.main_menu'
+        url: norotaro/guardian/clients
+        icon: icon-shield
+        permissions:
+            - norotaro.guardian.manage_clients
+        sideMenu:
+            side-menu-clients:
+                label: 'norotaro.guardian::lang.menu.clients'
+                url: norotaro/guardian/clients
+                icon: icon-mobile-phone
+                permissions:
+                    - norotaro.guardian.manage_clients

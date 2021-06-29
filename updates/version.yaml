@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table norotaro_guardian_clients'
+    - builder_table_create_norotaro_guardian_clients.php
+1.0.3:
+    - 'Created table norotaro_guardian_codes'
+    - builder_table_create_norotaro_guardian_codes.php

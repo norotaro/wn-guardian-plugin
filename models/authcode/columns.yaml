@@ -1,0 +1,28 @@
+columns:
+    id:
+        label: 'norotaro.guardian::lang.models.id'
+        type: number
+        invisible: true
+    value:
+        label: value
+        type: text
+        searchable: false
+        sortable: true
+    active:
+        label: 'norotaro.guardian::lang.models.active'
+        type: switch
+        sortable: true
+    created_at:
+        label: 'norotaro.guardian::lang.models.created_at'
+        type: datetime
+        sortable: true
+    updated_at:
+        label: 'norotaro.guardian::lang.models.updated_at'
+        type: datetime
+        invisible: true
+        sortable: true
+    deleted_at:
+        label: 'norotaro.guardian::lang.models.deleted_at'
+        type: datetime
+        invisible: true
+        sortable: true

@@ -1,0 +1,11 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+codes:
+  label: "norotaro.guardian::lang.topics.title"
+  manage:
+    form: $/norotaro/guardian/models/authcode/fields.yaml
+  view:
+    list: $/norotaro/guardian/models/authcode/columns.yaml
+    toolbarButtons: create|delete
