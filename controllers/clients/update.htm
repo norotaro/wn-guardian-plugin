@@ -1,6 +1,10 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('norotaro/guardian/clients') ?>">Clients</a></li>
+        <li>
+            <a href="<?= Backend::url('norotaro/guardian/clients') ?>">
+                <?= e(trans('norotaro.guardian::lang.client.p_name')) ?>
+            </a>
+        </li>
         <li><?= e($this->pageTitle) ?></li>
     </ul>
 <?php Block::endPut() ?>

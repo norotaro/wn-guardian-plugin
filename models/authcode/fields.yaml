@@ -1,9 +1,11 @@
 fields:
     value:
-        label: 'norotaro.guardian::lang.authcode.value'
+        label: "norotaro.guardian::lang.authcode.value"
         span: auto
         type: text
     active:
-        label: 'norotaro.guardian::lang.models.active'
+        label: "norotaro.guardian::lang.models.active"
         span: auto
         type: switch
+        on: On
+        off: Off

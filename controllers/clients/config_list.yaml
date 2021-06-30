@@ -1,4 +1,4 @@
-title: Clients
+title: 'norotaro.guardian::lang.client.p_name'
 modelClass: Norotaro\Guardian\Models\Client
 list: $/norotaro/guardian/models/client/columns.yaml
 recordUrl: 'norotaro/guardian/clients/update/:id'
