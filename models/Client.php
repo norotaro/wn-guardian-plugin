@@ -9,6 +9,7 @@ use Model;
  */
 class Client extends Model
 {
+    use \Norotaro\Guardian\Traits\Activable;
     use \Winter\Storm\Database\Traits\Sluggable;
     use \Winter\Storm\Database\Traits\SoftDelete;
     use \Winter\Storm\Database\Traits\Validation;

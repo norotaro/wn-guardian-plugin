@@ -5,7 +5,7 @@ namespace Norotaro\Guardian\Middlewares;
 use Closure;
 use Norotaro\Guardian\Models\Client;
 
-class AuthorizationControll
+class AuthorizationControl
 {
     public function handle($request, Closure $next)
     {
@@ -15,17 +15,20 @@ class AuthorizationControll
         if ($authorization && $userAgent) {
             $client = Client::active()
                 ->firstWhere('shortname', $userAgent);
-            $codeIsValid = (bool) $client
-                ->codes()
-                ->active()
-                ->where('value', $authorization)
-                ->count();
 
-            if ($client && $codeIsValid) {
-                return $next($request);
+            if ($client) {
+                $codeIsValid = (bool) $client
+                    ->codes()
+                    ->active()
+                    ->where('value', $authorization)
+                    ->count();
+
+                if ($client && $codeIsValid) {
+                    return $next($request);
+                }
             }
         }
 
-        throw new \Exception('You do not have permission for this request', 403);
+        \App::abort(403, 'You do not have permission for this request');
     }
 }
