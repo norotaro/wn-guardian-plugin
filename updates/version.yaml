@@ -6,3 +6,5 @@
 1.0.3:
     - 'Created table norotaro_guardian_codes'
     - builder_table_create_norotaro_guardian_codes.php
+1.1.0:
+    - 'Installation with composer is now supported'
