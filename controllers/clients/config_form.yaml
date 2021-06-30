@@ -1,10 +1,12 @@
-name: Clients
-form: $/norotaro/guardian/models/client/fields.yaml
+name: 'norotaro.guardian::lang.client.p_name'
 modelClass: Norotaro\Guardian\Models\Client
+form: $/norotaro/guardian/models/client/fields.yaml
 defaultRedirect: norotaro/guardian/clients
 create:
+    title: 'norotaro.guardian::lang.client.create_title'
     redirect: 'norotaro/guardian/clients/update/:id'
     redirectClose: norotaro/guardian/clients
 update:
+    title: 'norotaro.guardian::lang.client.update_title'
     redirect: norotaro/guardian/clients
     redirectClose: norotaro/guardian/clients
