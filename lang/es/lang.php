@@ -19,6 +19,10 @@
         'shortname_comment' => 'Es el valor que el cliente debe enviar en la cabecera <code>User-Agent</code>',
         'tab_codes' => 'Códigos',
         'tab_description' => 'Descripción',
+        'create_title' => 'Crear nuevo Cliente',
+        'update_title' => 'Actualizar Cliente',
+        'section_codes' => 'Códigos de autorización',
+        'section_codes_comment' => 'El cliente debe enviar un código activo en la cabecera <code>Authorization</code>',
     ],
     'permissions' => [
         'manage_clients' => 'Administrar clientes',

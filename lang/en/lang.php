@@ -19,6 +19,10 @@
         'shortname_comment' => 'This is the value that clients need to send at <code>User-Agent</code> header',
         'tab_codes' => 'Codes',
         'tab_description' => 'Description',
+        'create_title' => 'Create new Client',
+        'update_title' => 'Update Client',
+        'section_codes' => 'Authorization codes',
+        'section_codes_comment' => 'The client needs to send an active code at <code>Authorization</code> header',
     ],
     'permissions' => [
         'manage_clients' => 'Manage clients',

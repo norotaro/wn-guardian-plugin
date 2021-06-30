@@ -19,8 +19,20 @@ fields:
         span: storm
         cssClass: col-md-2
         type: switch
+        on: On
+        off: Off
 tabs:
     fields:
+        codes_section:
+            label: "norotaro.guardian::lang.client.section_codes"
+            comment: "norotaro.guardian::lang.client.section_codes_comment"
+            commentHtml: true
+            span: full
+            context:
+                - update
+                - preview
+            type: section
+            tab: "norotaro.guardian::lang.client.tab_codes"
         auth_codes:
             span: full
             path: relation_codes
