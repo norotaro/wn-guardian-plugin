@@ -3,7 +3,7 @@
 # ===================================
 
 codes:
-  label: "norotaro.guardian::lang.topics.title"
+  label: "norotaro.guardian::lang.authcode.s_name"
   manage:
     form: $/norotaro/guardian/models/authcode/fields.yaml
   view:
