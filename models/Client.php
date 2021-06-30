@@ -9,10 +9,10 @@ use Model;
  */
 class Client extends Model
 {
-    use \Winter\Storm\Database\Traits\Validation;
+    use \Norotaro\Guardian\Traits\Activable;
+    use \Winter\Storm\Database\Traits\Sluggable;
     use \Winter\Storm\Database\Traits\SoftDelete;
-
-    protected $dates = ['deleted_at'];
+    use \Winter\Storm\Database\Traits\Validation;
 
     /**
      * @var string The database table used by the model.
@@ -24,9 +24,17 @@ class Client extends Model
      */
     public $rules = [
         'name' => 'string|required',
+        'shortname' => 'string|required',
         'description' => 'string',
         'active' => 'boolean',
     ];
+
+    protected $dates = ['deleted_at'];
+
+    /**
+     * @var array Generate slugs for these attributes.
+     */
+    protected $slugs = ['shortname' => 'name'];
 
     public $hasMany = [
         'codes' => AuthCode::class,

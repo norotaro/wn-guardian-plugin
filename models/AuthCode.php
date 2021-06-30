@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
  */
 class AuthCode extends Model
 {
+    use \Norotaro\Guardian\Traits\Activable;
     use \Winter\Storm\Database\Traits\Validation;
     use \Winter\Storm\Database\Traits\SoftDelete;
 
