@@ -1,11 +1,23 @@
 fields:
     name:
-        label: 'norotaro.guardian::lang.models.name'
-        span: auto
+        label: "norotaro.guardian::lang.models.name"
+        span: storm
+        cssClass: col-md-6
         type: text
+    shortname:
+        label: "norotaro.guardian::lang.client.shortname"
+        span: storm
+        cssClass: col-md-4
+        type: text
+        comment: "norotaro.guardian::lang.client.shortname_comment"
+        commentHtml: true
+        preset:
+            field: name
+            type: slug
     active:
-        label: 'norotaro.guardian::lang.models.active'
-        span: auto
+        label: "norotaro.guardian::lang.models.active"
+        span: storm
+        cssClass: col-md-2
         type: switch
 tabs:
     fields:
@@ -16,10 +28,10 @@ tabs:
                 - update
                 - preview
             type: partial
-            tab: 'norotaro.guardian::lang.client.tab_codes'
+            tab: "norotaro.guardian::lang.client.tab_codes"
         description:
-            label: 'norotaro.guardian::lang.models.description'
+            label: "norotaro.guardian::lang.models.description"
             size: large
             span: full
             type: textarea
-            tab: 'norotaro.guardian::lang.client.tab_description'
+            tab: "norotaro.guardian::lang.client.tab_description"
