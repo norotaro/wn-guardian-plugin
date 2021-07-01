@@ -1,6 +1,8 @@
 # Guardian Plugin for WinterCMS
 
-Allows to easily restrict access to routes to clients that are not registered in the back-end.
+Allows to easily restrict access to routes declared by plugins in `routes.php`.
+
+Using the `AuthorizationControl` middleware provided with this plugin your routes will be accesibles only by the clients registered in the back-end.
 
 ## Installation
 
@@ -19,7 +21,7 @@ Each **Authorization Code** is represented by a **Value** and an **Active** fiel
 
 ## Client authorization
 
-When a client make a request needs to authenticate sending the following headers:
+When a client make a request it needs to authenticate sending the following headers:
 
 - `User-Agent: {{shortname}}`
 - `Authorization: {{activeCode}}`
@@ -32,7 +34,8 @@ Access to routes are restricted by applying the `AuthorizationControl` middlewar
 
 ```php
 <?php
-Route::group(['middleware' => \Norotaro\Guard\Middlewares\AuthorizationControl::class], function () {
+Route::middleware([\Norotaro\Guardian\Middlewares\AuthorizationControl::class])
+    ->group(, function () {
     // All routes here will require authorization
 });
 ```
