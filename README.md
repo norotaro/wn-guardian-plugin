@@ -35,7 +35,7 @@ Access to routes are restricted by applying the `AuthorizationControl` middlewar
 ```php
 <?php
 Route::middleware([\Norotaro\Guardian\Middlewares\AuthorizationControl::class])
-    ->group(, function () {
+    ->group(function () {
     // All routes here will require authorization
 });
 ```
