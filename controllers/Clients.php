@@ -2,14 +2,14 @@
 
 namespace Norotaro\Guardian\Controllers;
 
-use Backend\Classes\Controller;
 use BackendMenu;
+use Backend\Classes\Controller;
 
 class Clients extends Controller
 {
     public $implement = [
-        'Backend\Behaviors\ListController',
-        'Backend\Behaviors\FormController',
+        \Backend\Behaviors\ListController::class,
+        \Backend\Behaviors\FormController::class,
         \Backend\Behaviors\RelationController::class,
     ];
 
@@ -25,13 +25,5 @@ class Clients extends Controller
     {
         parent::__construct();
         BackendMenu::setContext('Norotaro.Guardian', 'main-menu', 'side-menu-clients');
-    }
-
-    public function relationExtendManageWidget($widget, $field, $model)
-    {
-        traceLog('binding');
-        $widget->bindEvent('form.extendModel', function () {
-            traceLog('it works!');
-        });
     }
 }
