@@ -8,7 +8,7 @@ Using the `AuthorizationControl` middleware provided with this plugin your route
 
 Run the following command in a project's root directory:
 
-```shell
+```sh
 composer require norotaro/wn-guardian-plugin
 php artisan winter:up
 ```

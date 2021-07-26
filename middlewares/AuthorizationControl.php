@@ -4,6 +4,7 @@ namespace Norotaro\Guardian\Middlewares;
 
 use Closure;
 use Norotaro\Guardian\Models\Client;
+use Norotaro\Rest\Exceptions\ApiException;
 
 class AuthorizationControl
 {
@@ -29,6 +30,6 @@ class AuthorizationControl
             }
         }
 
-        \App::abort(403, 'You do not have permission for this request');
+        throw new ApiException(403, 'You do not have permission for this request');
     }
 }
