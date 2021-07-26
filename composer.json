@@ -14,14 +14,17 @@
     "authors": [
         {
             "name": "Nelson Otazo",
-            "email": "nelson.otazo@gmail.com",
+            "email": "nelsonotazo+support@gmail.com",
             "homepage": "https://nelson.otazo.com.py",
             "role": "Developer"
         }
     ],
     "support": {
-        "email": "nelson.otazo@gmail.com",
+        "email": "nelsonotazo+support@gmail.com",
         "issues": "https://github.com/norotaro/wn-guardian-plugin/issues",
         "source": "https://github.com/norotaro/wn-guardian-plugin"
+    },
+    "require": {
+        "norotaro/wn-rest-plugin": "^1.0"
     }
 }

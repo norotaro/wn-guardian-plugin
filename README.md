@@ -8,7 +8,7 @@ Using the `AuthorizationControl` middleware provided with this plugin your route
 
 Run the following command in a project's root directory:
 
-```shell
+```sh
 composer require norotaro/wn-guardian-plugin
 php artisan winter:up
 ```
@@ -35,7 +35,7 @@ Access to routes are restricted by applying the `AuthorizationControl` middlewar
 ```php
 <?php
 Route::middleware([\Norotaro\Guardian\Middlewares\AuthorizationControl::class])
-    ->group(, function () {
+    ->group(function () {
     // All routes here will require authorization
 });
 ```
